@@ -137,6 +137,9 @@
         $menu.off('click', 'a.list-group-item', onItemClick);
         $menu.on('click', 'a.list-group-item', onItemClick);
 
+        $menu.off('click', 'a.menu-toggle', onItemClick);
+        $menu.on('click', 'a.menu-toggle', onItemClick);
+
         $menu.off('mouseenter mouseleave');
         $menu.hover(menuOnHoverIn, menuOnHoverOut);
 
