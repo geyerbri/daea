@@ -208,7 +208,7 @@
                 if (options.autoClose) {
                     $menu.status = "closed";
                     $menu.hide().animate({
-                        right: -($menu.width() + 33)
+                        right: -($menu.width() + 35)
                     }, 1, function () {
                         $menu.show();
                         switchArrow("right");
@@ -235,7 +235,7 @@
             } else if (options.side === "right") {
                 $menu.status = "closed";
                 $menu.hide().animate({
-                    right: -($menu.width() + 33)
+                    right: -($menu.width() + 2)
                 }, 1, function () {
                     $menu.show();
                     switchArrow("right");
@@ -348,7 +348,7 @@
             } else if (options.side === "right") {
 
                 if (options.pushBody) {
-                    $DOMBody.animate({marginRight: $menu.width() + 20}, {duration: options.duration});
+                    $DOMBody.animate({marginRight: $menu.width() + 35}, {duration: options.duration});
                 }
 
                 $menu.animate({
