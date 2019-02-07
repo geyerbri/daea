@@ -235,7 +235,7 @@
             } else if (options.side === "right") {
                 $menu.status = "closed";
                 $menu.hide().animate({
-                    right: -($menu.width() + 2)
+                    right: -($menu.width() + 35)
                 }, 1, function () {
                     $menu.show();
                     switchArrow("right");
