@@ -21,8 +21,8 @@
         var defaults = {
             side: "left",
             duration: 500,
-            remember: true,
-            autoClose: false,
+            remember: false,
+            autoClose: true,
             pushBody: true,
             closeOnClick: true,
             icons: {
@@ -208,7 +208,7 @@
                 if (options.autoClose) {
                     $menu.status = "closed";
                     $menu.hide().animate({
-                        right: -($menu.width() + 2)
+                        right: -($menu.width() + 200)
                     }, 1, function () {
                         $menu.show();
                         switchArrow("right");
