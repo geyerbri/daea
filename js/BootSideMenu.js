@@ -192,7 +192,7 @@
                 if (options.autoClose) {
                     $menu.status = "closed";
                     $menu.hide().animate({
-                        left: -($menu.width() + 2)
+                        left: -($menu.width() + 6)
                     }, 1, function () {
                         $menu.show();
                         switchArrow("left");
@@ -201,14 +201,14 @@
                     switchArrow("right");
                     $menu.status = "opened";
                     if (options.pushBody) {
-                        $DOMBody.css("margin-left", $menu.width() + 20);
+                        $DOMBody.css("margin-left", $menu.width() + 23);
                     }
                 }
             } else if (options.side === "right") {
                 if (options.autoClose) {
                     $menu.status = "closed";
                     $menu.hide().animate({
-                        right: -($menu.width() + 20)
+                        right: -($menu.width() + 21)
                     }, 1, function () {
                         $menu.show();
                         switchArrow("right");
@@ -217,7 +217,7 @@
                     switchArrow("left");
                     $menu.status = "opened";
                     if (options.pushBody) {
-                        $DOMBody.css("margin-right", $menu.width() + 20);
+                        $DOMBody.css("margin-right", $menu.width() + 22);
                     }
                 }
             }
