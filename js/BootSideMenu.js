@@ -21,9 +21,9 @@
         var defaults = {
             side: "left",
             duration: 500,
-            remember: false,
+            remember: true,
             autoClose: false,
-            pushBody: false,
+            pushBody: true,
             closeOnClick: true,
             icons: {
                 left: 'glyphicon glyphicon-chevron-left',
@@ -31,7 +31,7 @@
                 down: 'glyphicon glyphicon-chevron-down'
             },
             theme: 'default',
-            width: "25%",
+            width: "15%",
             onTogglerClick: function () {
                 //code to be executed when the toggler arrow was clicked
             },
@@ -208,7 +208,7 @@
                 if (options.autoClose) {
                     $menu.status = "closed";
                     $menu.hide().animate({
-                        right: -($menu.width() + 30)
+                        right: -($menu.width() + 2)
                     }, 1, function () {
                         $menu.show();
                         switchArrow("right");
@@ -217,7 +217,7 @@
                     switchArrow("left");
                     $menu.status = "opened";
                     if (options.pushBody) {
-                        $DOMBody.css("margin-right", $menu.width() + 35);
+                        $DOMBody.css("margin-right", $menu.width() + 20);
                     }
                 }
             }
@@ -235,7 +235,7 @@
             } else if (options.side === "right") {
                 $menu.status = "closed";
                 $menu.hide().animate({
-                    right: -($menu.width() + 30)
+                    right: -($menu.width() + 2)
                 }, 1, function () {
                     $menu.show();
                     switchArrow("right");
@@ -255,7 +255,7 @@
                 switchArrow("left");
                 $menu.status = "opened";
                 if (options.pushBody) {
-                    $DOMBody.css("margin-right", $menu.width() + 35);
+                    $DOMBody.css("margin-right", $menu.width() + 20);
                 }
             }
         }
@@ -294,7 +294,7 @@
                 }
 
                 $menu.animate({
-                    right: -($menu.width() + 30)
+                    right: -($menu.width() + 2)
                 }, {
                     duration: options.duration,
                     done: function () {
@@ -348,7 +348,7 @@
             } else if (options.side === "right") {
 
                 if (options.pushBody) {
-                    $DOMBody.animate({marginRight: $menu.width() + 35}, {duration: options.duration});
+                    $DOMBody.animate({marginRight: $menu.width() + 20}, {duration: options.duration});
                 }
 
                 $menu.animate({
