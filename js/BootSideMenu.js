@@ -21,9 +21,9 @@
         var defaults = {
             side: "left",
             duration: 500,
-            remember: true,
+            remember: false,
             autoClose: false,
-            pushBody: true,
+            pushBody: false,
             closeOnClick: true,
             icons: {
                 left: 'glyphicon glyphicon-chevron-left',
@@ -294,7 +294,7 @@
                 }
 
                 $menu.animate({
-                    right: -($menu.width() + 2)
+                    right: -($menu.width() + 30)
                 }, {
                     duration: options.duration,
                     done: function () {
@@ -348,7 +348,7 @@
             } else if (options.side === "right") {
 
                 if (options.pushBody) {
-                    $DOMBody.animate({marginRight: $menu.width() + 20}, {duration: options.duration});
+                    $DOMBody.animate({marginRight: $menu.width() + 35}, {duration: options.duration});
                 }
 
                 $menu.animate({
