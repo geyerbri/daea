@@ -19,7 +19,14 @@
       </div>
     </div>
 	<script type="text/javascript">
-		$('#about').BootSideMenu({side:"right"});
+	<script type="text/javascript">
+		$('#about').BootSideMenu({
+			side:"right",
+			remember: false,
+			pushBody: false,
+			width: "25%"
+		});
+		
 		$('#menu-toggle').click(function () {
 			$('#about').BootSideMenu.toggle();
 		});
