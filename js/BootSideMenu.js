@@ -294,7 +294,7 @@
                 }
 
                 $menu.animate({
-                    right: -($menu.width() + 2)
+                    right: -($menu.width() + 35)
                 }, {
                     duration: options.duration,
                     done: function () {
