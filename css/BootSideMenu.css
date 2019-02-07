@@ -164,13 +164,15 @@
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
     .bootsidemenu {
-        min-width: 90%;
+        min-width: 60%;
     }
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
-
+	.bootsidemenu {
+        min-width: 60%;
+    }
 }
 
 /*========== Theme Default ==========*/
