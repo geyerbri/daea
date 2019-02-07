@@ -227,7 +227,7 @@
             if (options.side === "left") {
                 $menu.status = "closed";
                 $menu.hide().animate({
-                    left: -($menu.width() + 2)
+                    left: -($menu.width() + 20)
                 }, 1, function () {
                     $menu.show();
                     switchArrow("left");
@@ -235,7 +235,7 @@
             } else if (options.side === "right") {
                 $menu.status = "closed";
                 $menu.hide().animate({
-                    right: -($menu.width() + 2)
+                    right: -($menu.width() + 120)
                 }, 1, function () {
                     $menu.show();
                     switchArrow("right");
