@@ -21,12 +21,13 @@
 	<script type="text/javascript">
 		$('#about').BootSideMenu({
 			side:"right",
-//			remember: false,
+			remember: false,
 			pushBody: false,
+			autoClose: true,
 			width: "25%"
 		});
 		
 		$('#menu-toggle').click(function () {
-			$('#about').BootSideMenu.open();
+			$('#about').BootSideMenu.toggle();
 		});
 	</script>
