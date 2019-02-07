@@ -217,7 +217,7 @@
                     switchArrow("left");
                     $menu.status = "opened";
                     if (options.pushBody) {
-                        $DOMBody.css("margin-right", $menu.width() + 20);
+                        $DOMBody.css("margin-right", $menu.width() + 35);
                     }
                 }
             }
