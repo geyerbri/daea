@@ -98,8 +98,8 @@ code {
 .dontshow {
     text-align: left;
 }
-/*
-#about {
+
+#about p,h2 {
 	padding-left: 15px;
 	padding-right: 15px;
 }
