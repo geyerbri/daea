@@ -31,7 +31,7 @@
                 down: 'glyphicon glyphicon-chevron-down'
             },
             theme: 'default',
-            width: "30%",
+            width: "25%",
             onTogglerClick: function () {
                 //code to be executed when the toggler arrow was clicked
             },
@@ -208,7 +208,7 @@
                 if (options.autoClose) {
                     $menu.status = "closed";
                     $menu.hide().animate({
-                        right: -($menu.width() + 2)
+                        right: -($menu.width() + 18)
                     }, 1, function () {
                         $menu.show();
                         switchArrow("right");
