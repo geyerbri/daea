@@ -1,8 +1,8 @@
 .bootsidemenu {
     z-index: 1080;
     position: fixed;
-    top: -1px;
-    bottom: -1px;
+    top: 50px;
+    bottom: 50px;
     padding: 0;
     background-color: #fff;
     -webkit-background-clip: padding-box;
