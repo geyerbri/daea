@@ -208,7 +208,7 @@
                 if (options.autoClose) {
                     $menu.status = "closed";
                     $menu.hide().animate({
-                        right: -($menu.width() + 18)
+                        right: -($menu.width() + 30)
                     }, 1, function () {
                         $menu.show();
                         switchArrow("right");
