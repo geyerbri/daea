@@ -208,7 +208,7 @@
                 if (options.autoClose) {
                     $menu.status = "closed";
                     $menu.hide().animate({
-                        right: -($menu.width() + 2)
+                        right: -($menu.width() + 30)
                     }, 1, function () {
                         $menu.show();
                         switchArrow("right");
@@ -217,7 +217,7 @@
                     switchArrow("left");
                     $menu.status = "opened";
                     if (options.pushBody) {
-                        $DOMBody.css("margin-right", $menu.width() + 20);
+                        $DOMBody.css("margin-right", $menu.width() + 35);
                     }
                 }
             }
@@ -235,7 +235,7 @@
             } else if (options.side === "right") {
                 $menu.status = "closed";
                 $menu.hide().animate({
-                    right: -($menu.width() + 2)
+                    right: -($menu.width() + 30)
                 }, 1, function () {
                     $menu.show();
                     switchArrow("right");
@@ -255,7 +255,7 @@
                 switchArrow("left");
                 $menu.status = "opened";
                 if (options.pushBody) {
-                    $DOMBody.css("margin-right", $menu.width() + 20);
+                    $DOMBody.css("margin-right", $menu.width() + 35);
                 }
             }
         }
@@ -294,7 +294,7 @@
                 }
 
                 $menu.animate({
-                    right: -($menu.width() + 2)
+                    right: -($menu.width() + 30)
                 }, {
                     duration: options.duration,
                     done: function () {
@@ -348,7 +348,7 @@
             } else if (options.side === "right") {
 
                 if (options.pushBody) {
-                    $DOMBody.animate({marginRight: $menu.width() + 20}, {duration: options.duration});
+                    $DOMBody.animate({marginRight: $menu.width() + 35}, {duration: options.duration});
                 }
 
                 $menu.animate({
