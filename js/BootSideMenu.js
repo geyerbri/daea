@@ -21,7 +21,7 @@
         var defaults = {
             side: "left",
             duration: 500,
-            remember: true,
+            remember: false,
             autoClose: false,
             pushBody: true,
             closeOnClick: true,
@@ -192,7 +192,7 @@
                 if (options.autoClose) {
                     $menu.status = "closed";
                     $menu.hide().animate({
-                        left: -($menu.width() + 6)
+                        left: -($menu.width() + 2)
                     }, 1, function () {
                         $menu.show();
                         switchArrow("left");
@@ -201,14 +201,14 @@
                     switchArrow("right");
                     $menu.status = "opened";
                     if (options.pushBody) {
-                        $DOMBody.css("margin-left", $menu.width() + 23);
+                        $DOMBody.css("margin-left", $menu.width() + 20);
                     }
                 }
             } else if (options.side === "right") {
                 if (options.autoClose) {
                     $menu.status = "closed";
                     $menu.hide().animate({
-                        right: -($menu.width() + 21)
+                        right: -($menu.width() + 2)
                     }, 1, function () {
                         $menu.show();
                         switchArrow("right");
@@ -217,7 +217,7 @@
                     switchArrow("left");
                     $menu.status = "opened";
                     if (options.pushBody) {
-                        $DOMBody.css("margin-right", $menu.width() + 22);
+                        $DOMBody.css("margin-right", $menu.width() + 20);
                     }
                 }
             }
