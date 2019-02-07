@@ -379,7 +379,7 @@
 
             if (windowWidth <= 480) {
                 options.pushBody = false;
-                options.closeOnClick = true;
+                options.closeOnClick = false;
             } else {
                 options.pushBody = $menu.originalPushBody;
                 options.closeOnClick = $menu.originalCloseOnClick;
