@@ -21,7 +21,7 @@
         var defaults = {
             side: "left",
             duration: 500,
-            remember: false,
+            remember: true,
             autoClose: false,
             pushBody: true,
             closeOnClick: true,
