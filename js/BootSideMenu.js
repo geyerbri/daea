@@ -31,7 +31,7 @@
                 down: 'glyphicon glyphicon-chevron-down'
             },
             theme: 'default',
-            width: "15%",
+            width: "30%",
             onTogglerClick: function () {
                 //code to be executed when the toggler arrow was clicked
             },
@@ -208,7 +208,7 @@
                 if (options.autoClose) {
                     $menu.status = "closed";
                     $menu.hide().animate({
-                        right: -($menu.width() + 20)
+                        right: -($menu.width() + 2)
                     }, 1, function () {
                         $menu.show();
                         switchArrow("right");
@@ -217,7 +217,7 @@
                     switchArrow("left");
                     $menu.status = "opened";
                     if (options.pushBody) {
-                        $DOMBody.css("margin-right", $menu.width() + 120);
+                        $DOMBody.css("margin-right", $menu.width() + 20);
                     }
                 }
             }
@@ -227,7 +227,7 @@
             if (options.side === "left") {
                 $menu.status = "closed";
                 $menu.hide().animate({
-                    left: -($menu.width() + 20)
+                    left: -($menu.width() + 2)
                 }, 1, function () {
                     $menu.show();
                     switchArrow("left");
@@ -235,7 +235,7 @@
             } else if (options.side === "right") {
                 $menu.status = "closed";
                 $menu.hide().animate({
-                    right: -($menu.width() + 120)
+                    right: -($menu.width() + 2)
                 }, 1, function () {
                     $menu.show();
                     switchArrow("right");
